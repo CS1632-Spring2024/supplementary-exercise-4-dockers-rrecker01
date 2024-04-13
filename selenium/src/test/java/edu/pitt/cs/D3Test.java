@@ -84,10 +84,6 @@ public class D3Test {
   //   driver.close();
   // }
   @Test
-  public void testConnection() {
-    driver.get("http://localhost:8080/");
-  }
-  @Test
   public void tEST1LINKS() {
     driver.get("http://localhost:8080");
     driver.manage().window().setSize(new Dimension(900, 718));
