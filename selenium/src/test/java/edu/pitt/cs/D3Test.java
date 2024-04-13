@@ -23,6 +23,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.micrometer.core.annotation.TimedSet;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
@@ -80,6 +83,10 @@ public class D3Test {
   //   }
   //   driver.close();
   // }
+  @Test
+  public void testConnection() {
+    driver.get("http://localhost:8080/");
+  }
   @Test
   public void tEST1LINKS() {
     driver.get("http://localhost:8080");
